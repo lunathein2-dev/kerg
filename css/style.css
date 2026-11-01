@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root 
+{
+    --white-color:#ffffff;
+    --milk-color:#f8f9fa;
+    --grey-color:#808080;
+    --red-color:#ff0000;
+
+}
+::selection
+{
+    background: var(--red-color);
+    color: var(--white-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+   
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+header{
+
+    background:var(--milk-color) ;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    /* background: lightblue; */
+    width: 85%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.navbar
+{
+    display: flex;
+    gap: 1.2rem;
+    list-style-type: none;
+}
+
+nav .logo
+{
+    color: var(--grey-color);
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+
+
+}
+
+.navbar .nav_link
+{
+    color: var(--grey-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding:  10px 12px;
+    transition: 0.3s;
+    border-radius: 10px;
+
+
+}
+
+.navbar .nav_link:hover
+{
+    background : var(--red-color);
+    color: var(--white-color);
+
+
+}
+
+.navbar .active
+{
+    background: var(--red-color);
+    color: var(--white-color);
+
+}
+/* Product Section */
+#product_section{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    background: grey;
+}
+.product_container{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.product_card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.product_card{
+    box-shadow: 2px 2px 5px var(--gray-color);
+    /* top ,right and left , buttom */
+    padding: 5px;
+    border-radius: 15px;
+}
+.product_card .details{
+    padding: 5px;
+
+}
+.product_card .details small{
+    color: var(--milk-color);
+    font-weight: bold;
+}
+.product_card .details h4{
+    font-size: 1.5rem;
+    margin-bottom:1rem;
+}
+.product_card .details p{
+    color: rgb(255, 21, 45);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.product_card .image{
+    position: relative;
+    /* relative ka body ko a lok" */
+}
+.product_card .image .cart_icon{
+    position: absolute;
+    /* absolute ka nee sat yr ko a lok" */
+    top: 10px;
+    right: 10px;
+    background: var(--white-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+/* slider */
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      /* about section */
+      #about_section
+      {
+        padding: 3rem 0;
+        display: flex;
+        justify-content: center;
+      }
+      .about_container
+      {
+        width: 85%;
+        display: grid;
+        /* justify-content: center; */
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+
+
+      }
+
+      .about_container img{
+        width: 100%;
+        border-radius: 1rem;
+
+
+      }
+
+      .about_container .right 
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .about_container .right small{
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--red-color);
+
+      }
+      .about_container .right h1 
+      {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+      .about_container .right p
+      {
+        color: var(--gray-color);
+        line-height:2rem;
+      }
+
+      /* Service Section */
+#service_section{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.service_container{
+    width: 85%;
+    text-align: center;
+}
+
+.service_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.service_cards .card{
+    box-shadow: 2px 2px 2px var(--gray-color);
+    padding: 1.5rem 0;
+    border-radius: 1rem;
+    line-height: 3rem;
+}
+
+.service_cards .card i{
+    font-size: 5rem;
+    color: var(--red-color);
+
+}
+
+.service_cards .card p{
+    color: var(--gray-color)
+}
+
+#contact_section
+{
+    background:var(--white-color);
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_container
+{
+    background: var(--milk-color);
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.contact_container .left h1
+{
+
+    font-size: 3rem;
+    color: var(--red-color);
+    margin-bottom: 2rem;
+}
+
+.contact_container .left p{
+
+    color: var(--gray-color);
+    
+}
+
+
+
+.info_item
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.info_item i{
+    color: var(--red-color);
+    background:var(--milk-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.contact_container .right
+{
+    padding: 3rem;
+    border: 1px solid var(--red-color);
+    box-shadow: 0 10px 25px black;
+    border-radius: 1rem;
+    
+
+
+}
+.contact_container .right input,
+.contact_container .right select,
+.contact_container .right textarea
+{
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: var(--milk-color);
+    box-sizing: border-box;
+     /* border: none; */
+    outline: 2px solid var(--gray-color);
+
+}
+
+.contact_container .right input:focus
+{
+    outline: 2px solid var(--red-color);
+    /* outline so tr border nae same */
+    border: none;
+}
+
+.contact_container .right.form_group
+{
+    margin-top: 2rem;
+
+}
+
+.contact_container .right button
+{
+    width: 100%;
+    padding: 20px;
+    background: var(--red-color);
+    border-radius: 8px;
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contact_container .right .row
+{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 0.5rem;
+
+}
+
+/* footer */
+footer
+{
+
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* horizontal */
+    border-top: 2px solid var(--grey-color);
+}
+/* grid so equal yuu yin tone */
+/* .service_cards .card p{
+    color: var(--gray-color);
+}
+      .service_container h1
+      {
+
+        animation:flip-vertical-fwd 3s infinite ;
+      }
+      @keyframes flip-vertical-fwd {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px) rotateY(180deg);
+            transform: translateZ(160px) rotateY(180deg);
+  }
+}
+ */
+
+
+
+
+
+
+
+
+
+
+      /* @keyframes flip-vertical-fwd {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px) rotateY(180deg);
+            transform: translateZ(160px) rotateY(180deg);
+  }
+}
+ keyframe tone yin  animation ko yuu tone py ya 
+ */
+
+
+
+ @media(max-width:900px){
+    .about_container{
+        grid-template-columns: 1fr; 
+    } 
+     .service_cards{
+        
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+}
+@media(max-width: 500px){
+     .service_cards{
+         grid-template-columns: 1fr; 
+    }
+    .contact_container{
+        grid-template-columns: 1fr;
+    }
+}
+ @media(max-width: 500px){
+     .service_cards{
+         grid-template-columns: 1fr; 
+     }
+     .contact_container .right{
+         padding: 1rem; 
+     }
+ }
